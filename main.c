@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-
+//Création d'un Menu de choix de difficulté du jeu
 int ChoixDifficulte;
 
 printf("Choix de la difficulte :\n");
