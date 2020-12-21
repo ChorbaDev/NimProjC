@@ -13,7 +13,7 @@
 struct Case{
   int L;
   int C;
-};
+} ;
 typedef struct Case T_Case;
 //Un tableau de ce type permettra de stocker l’ensemble des voisines d’une case donnée.
 typedef T_Case T_Tab_Case;
