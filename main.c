@@ -9,7 +9,7 @@ printf("1. Niveau debutant\n");
 printf("2. Niveau moyen\n");
 printf("3. Niveau expert\n");
 printf("4. Niveau virtuose\n");
-printf("Veuillez entrer un nombre entre 1 et 4 :\n")
+printf("Veuillez entrer un nombre entre 1 et 4 :\n");
 scanf("%d\n", &ChoixDifficulte);
 
   switch (ChoixDifficulte)
