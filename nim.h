@@ -5,6 +5,7 @@
 
 #ifndef NIM_H
 #define NIM_H
+
 //nombre minimum de lignes de la grille
 #define VMIN 5
 //nombre maximum de lignes de la grille
