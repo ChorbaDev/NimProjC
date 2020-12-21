@@ -11,10 +11,10 @@
 #define Coup_Ordi_Hasard(b) (rand()%b)
 //structure represente une case de la grille
 struct Case{
-  int L;
-  int C;
+  int L; //L = nombre de lignes
+  int C; //C = nombre de colonnes
 } ;
-typedef struct Case T_Case;
+typedef struct Case T_Case; //on renomme struct Case en T_Case
 
 //Un tableau de ce type permettra de stocker l’ensemble des voisines d’une case donnée.
 typedef T_Case T_Tab_Case;
