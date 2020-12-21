@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+
 #ifndef NIM_H
 #define NIM_H
 //nombre minimum de lignes de la grille
@@ -20,7 +25,10 @@ typedef struct Case T_Case; //on renomme struct Case en T_Case
 typedef T_Case T_Tab_Case;
 
 //une fonction permet de saisir et de retourner un entier compris entre deux bornes.
-int Lire_Entier(int BINF,int BSUP);
+int Lire_Entier(int BINF,int BSUP) {
+  printf("Saisir un entier entre %d et %d\n", BINF, BSUP);
+  
+}
 
 //fonction qui calcule le nimber d'une case donnee
 int Nimber(T_Case pion,int m[VMAX][VMAX]);
