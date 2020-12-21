@@ -26,8 +26,17 @@ typedef T_Case T_Tab_Case;
 
 //une fonction permet de saisir et de retourner un entier compris entre deux bornes.
 int Lire_Entier(int BINF,int BSUP) {
+  int entier;
+
+  //On demande de saisir un entier compris entre les deux bornes d'intervalles
   printf("Saisir un entier entre %d et %d\n", BINF, BSUP);
-  
+  //On lit cet entier
+  scanf("%d", entier);
+  //Si l'entier est en dehors des bornes, on affiche un message d'erreur
+  if (entier < BINF || entier > BSUP)
+  {
+    printf("Erreur, le nombre %d n'est pas compris dans l'intervalle...\n", entier);
+  }
 }
 
 //fonction qui calcule le nimber d'une case donnee
