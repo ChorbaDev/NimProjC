@@ -45,6 +45,7 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
         nb_vois++;
         j++;
     }
+    //incrémentation avec n à faire
 }
 //"TO CLEAR THE SCREEN"
 void clrscr()
