@@ -17,6 +17,35 @@ int Nimber(T_Case pion,int m[VMAX][VMAX]){
   int i=pion.Ligne-1,j=pion.Colonne-1;
   return m[i][j];
 }
+//fonction qui trouve les voisines
+void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
+{
+    int i=pion.Colonne;
+    int j=0;
+    //calcul du nb de cases voisines
+    //calcul des voisines horizontalement
+    while(i<ncol && j<2){
+        T_Case vois;
+        i++;
+        vois.Ligne=pion.Ligne;
+        vois.Colonne=i;
+        tab_vois[*nb_vois]=vois;
+        nb_vois++;
+        j++;
+    }
+    i=pion.Ligne;
+    j=0;
+    //calcul des voisines verticalement
+    while(i<nlig && j<2){
+        T_Case vois;
+        i++;
+        vois.Ligne=i;
+        vois.Colonne=pion.Colonne;
+        tab_vois[*nb_vois]=vois;
+        nb_vois++;
+        j++;
+    }
+}
 //"TO CLEAR THE SCREEN"
 void clrscr()
 {
