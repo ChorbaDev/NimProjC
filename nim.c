@@ -17,3 +17,8 @@ int Nimber(T_Case pion,int m[VMAX][VMAX]){
   int i=pion.Ligne-1,j=pion.Colonne-1;
   return m[i][j];
 }
+//"TO CLEAR THE SCREEN"
+void clrscr()
+{
+    system("@cls||clear");
+}
