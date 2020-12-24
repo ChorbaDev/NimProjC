@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="NimProjC" targetName="NimProjC" />
+    </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -9,9 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/NimProjC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NimProjC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="Création de la fonction voisines dans nim.c">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
@@ -23,6 +23,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -74,8 +75,16 @@
       <workItem from="1608559652984" duration="1447000" />
       <workItem from="1608802988998" duration="5147000" />
       <workItem from="1608808364260" duration="646000" />
-      <workItem from="1608809185684" duration="381000" />
+      <workItem from="1608809185684" duration="2715000" />
     </task>
+    <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
+      <created>1608809790200</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608809790200</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,5 +101,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Création de la fonction voisines dans nim.c" />
+    <option name="LAST_COMMIT_MESSAGE" value="Création de la fonction voisines dans nim.c" />
   </component>
 </project>
