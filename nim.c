@@ -22,6 +22,7 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
 {
     int i=pion.Colonne;
     int j=0;
+    int n=0;
     //calcul du nb de cases voisines
     //calcul des voisines horizontalement
     while(i<ncol && j<2){
@@ -29,8 +30,8 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
         i++;
         vois.Ligne=pion.Ligne;
         vois.Colonne=i;
-        tab_vois[*nb_vois]=vois;
-        nb_vois++;
+        tab_vois[n]=vois;
+        n++;
         j++;
     }
     i=pion.Ligne;
@@ -41,11 +42,12 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
         i++;
         vois.Ligne=i;
         vois.Colonne=pion.Colonne;
-        tab_vois[*nb_vois]=vois;
-        nb_vois++;
+        tab_vois[n]=vois;
+        n++;
         j++;
     }
-    //incrémentation avec n à faire
+    //la valeur de nb_vois prend la valeur de n
+    *nb_vois=n;
 }
 //"TO CLEAR THE SCREEN"
 void clrscr()
