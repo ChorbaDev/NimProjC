@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="Création de la fonction voisines dans nim.c">
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c changes to do on Voisines">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
@@ -75,7 +75,7 @@
       <workItem from="1608559652984" duration="1447000" />
       <workItem from="1608802988998" duration="5147000" />
       <workItem from="1608808364260" duration="646000" />
-      <workItem from="1608809185684" duration="2715000" />
+      <workItem from="1608809185684" duration="5381000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -84,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608809790200</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="nim.c changes to do on Voisines">
+      <created>1608817923732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608817923732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +111,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Création de la fonction voisines dans nim.c" />
-    <option name="LAST_COMMIT_MESSAGE" value="Création de la fonction voisines dans nim.c" />
+    <MESSAGE value="nim.c changes to do on Voisines" />
+    <option name="LAST_COMMIT_MESSAGE" value="nim.c changes to do on Voisines" />
   </component>
 </project>
