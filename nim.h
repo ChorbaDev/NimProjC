@@ -22,7 +22,10 @@ typedef struct Case T_Case;
 //Un tableau de ce type permettra de stocker l’ensemble des voisines d’une case donnée.
 typedef T_Case T_Tab_Case;
 //une fonction permet de saisir et de retourner un entier compris entre deux bornes.
-int Lire_Entier(int BINF,int BSUP);
+int Lire_Entier(int BINF,int BSUP)
+{
+  
+}
 //fonction qui calcule le nimber d'une case donnee
 int trouve_Nimber(T_Case pion,int grille[VMAX][VMAX]);
 //permet de saisir des donnees
