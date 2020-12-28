@@ -25,13 +25,12 @@ typedef T_Case T_Tab_Case;
 int Lire_Entier(int BINF,int BSUP)
 {
   int entier = 0;
-  printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP);
-  scanf(entier);
-  if (entier < BINF || entier > BSUP)
+  printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP); //on demande la saisie de l'entier et on affiche l'intervalle
+  scanf(entier); //on lit l'entier
+  if (entier < BINF || entier > BSUP) //on vérifie que l'entier est dans l'intervalle
   {
-    printf("Le nombre est incorrect\n");
+    printf("Le nombre est incorrect\n"); //si non on affiche un message d'erreur
   }
-  
 }
 //fonction qui calcule le nimber d'une case donnee
 int trouve_Nimber(T_Case pion,int grille[VMAX][VMAX]);
