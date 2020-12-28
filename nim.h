@@ -27,6 +27,11 @@ int Lire_Entier(int BINF,int BSUP)
   int entier = 0;
   printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP);
   scanf(entier);
+  if (entier < BINF || entier > BSUP)
+  {
+    printf("Le nombre est incorrect\n");
+  }
+  
 }
 //fonction qui calcule le nimber d'une case donnee
 int trouve_Nimber(T_Case pion,int grille[VMAX][VMAX]);
