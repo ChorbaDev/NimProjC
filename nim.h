@@ -22,16 +22,7 @@ typedef struct Case T_Case;
 //Un tableau de ce type permettra de stocker l’ensemble des voisines d’une case donnée.
 typedef T_Case T_Tab_Case;
 //une fonction permet de saisir et de retourner un entier compris entre deux bornes.
-int Lire_Entier(int BINF,int BSUP)
-{
-  int entier = 0;
-  printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP); //on demande la saisie de l'entier et on affiche l'intervalle
-  scanf(entier); //on lit l'entier
-  if (entier < BINF || entier > BSUP) //on vérifie que l'entier est dans l'intervalle
-  {
-    printf("Le nombre est incorrect\n"); //si non on affiche un message d'erreur
-  }
-}
+int Lire_Entier(int BINF,int BSUP);
 //fonction qui calcule le nimber d'une case donnee
 int trouve_Nimber(T_Case pion,int grille[VMAX][VMAX]);
 //permet de saisir des donnees
