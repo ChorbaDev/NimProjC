@@ -118,8 +118,12 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
     scanf(ncol);
   } while (ncol < VMIN || ncol > VMAX);
   
-  printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
-  scanf(niveau);
+  do
+  {
+    printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
+    scanf(niveau);
+  } while (niveau < 1 || niveau > 4);
+  
   printf("\n Qui commence ?\n"); //on demande qui commence
   printf("L'ordinateur (1) ou le joueur (2) ?\n"); //choix de qui commence
   scanf(next);
