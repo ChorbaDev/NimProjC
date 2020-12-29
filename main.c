@@ -33,6 +33,6 @@ else coup=-1;
     affiche_grille(pion,nlig,ncol);
     printf("C est termine. ");
     if(coup==-1) printf("BRAVO TU AS GAGNE");
-    else printf("vous avez perdu. GAME OVER");
+    else printf("Vous avez perdu. GAME OVER");
   return 0;
 }
