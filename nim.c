@@ -113,5 +113,7 @@ void Parametres(int *nlig,int *ncol,int *niveau,int *next) {
   printf("\nNiveau de 1 a 4 :");
   scanf(niveau);
   printf("\n Qui commence ?\n");
-  
+  printf("L'ordinateur (1) ou le joueur (2) ?\n");
+  scanf(next);
+  printf("C'est parti !");
 }
