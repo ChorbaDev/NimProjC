@@ -108,6 +108,11 @@ void Parametres(int *nlig,int *ncol,int *niveau,int *next) {
   printf("Parametres du jeu :"); 
   printf("\nNombre de lignes :"); //on demande le nombre de lignes
   scanf(nlig);
+  //if (nlig < VMIN || nlig > VMAX)
+  //{
+    /* code */
+  //}
+  
   printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
   scanf(ncol);
   printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
