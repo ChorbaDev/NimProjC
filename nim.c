@@ -93,6 +93,7 @@ void clrscr()
     system("@cls||clear");
 }
 
+//Lecture d'un entier compris entre BINF et BSUP
 int Lire_Entier(int BINF,int BSUP)
 {
   int entier = 0;
@@ -104,6 +105,7 @@ int Lire_Entier(int BINF,int BSUP)
   }
 }
 
+//Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...)
 void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   printf("Parametres du jeu :"); 
   do
