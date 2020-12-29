@@ -111,4 +111,7 @@ void Parametres(int *nlig,int *ncol,int *niveau,int *next) {
   printf("\nNombre de colonnes:");
   scanf(ncol);
   printf("\nNiveau de 1 a 4 :");
+  scanf(niveau);
+  printf("\n Qui commence ?\n");
+  
 }
