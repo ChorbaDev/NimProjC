@@ -104,17 +104,20 @@ int Lire_Entier(int BINF,int BSUP)
   }
 }
 
-void Parametres(int *nlig,int *ncol,int *niveau,int *next) {
+void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   printf("Parametres du jeu :"); 
-  printf("\nNombre de lignes :"); //on demande le nombre de lignes
-  scanf(nlig);
-  //if (nlig < VMIN || nlig > VMAX)
-  //{
-    /* code */
-  //}
+  do
+  {
+    printf("\nNombre de lignes :"); //on demande le nombre de lignes
+    scanf(nlig);
+  } while (nlig < VMIN || nlig > VMAX);
   
-  printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
-  scanf(ncol);
+  do
+  {
+    printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
+    scanf(ncol);
+  } while (ncol < VMIN || ncol > VMAX);
+  
   printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
   scanf(niveau);
   printf("\n Qui commence ?\n"); //on demande qui commence
