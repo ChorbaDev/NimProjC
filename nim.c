@@ -103,3 +103,7 @@ int Lire_Entier(int BINF,int BSUP)
     printf("Le nombre est incorrect\n"); //si non on affiche un message d'erreur
   }
 }
+
+void Parametres(int *nlig,int *ncol,int *niveau,int *next) {
+
+}
