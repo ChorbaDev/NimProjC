@@ -11,8 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c update to Coup_Joueur optimisation and bug fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c update to Coup_Joueur affichage">
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,7 @@
       <workItem from="1608802988998" duration="5147000" />
       <workItem from="1608808364260" duration="646000" />
       <workItem from="1608809185684" duration="5381000" />
-      <workItem from="1609341930952" duration="7260000" />
+      <workItem from="1609341930952" duration="7683000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -141,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609351218546</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="nim.c update to Coup_Joueur affichage">
+      <created>1609352429271</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609352429271</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,11 +198,6 @@
         </entry>
       </map>
     </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="1" value="TOOL_WINDOW" />
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -209,6 +210,7 @@
     <MESSAGE value="nim.c update to voisines (usless var)" />
     <MESSAGE value="nim.c update to voisines while correction and T_case into place" />
     <MESSAGE value="nim.c update to Coup_Joueur optimisation and bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c update to Coup_Joueur optimisation and bug fixes" />
+    <MESSAGE value="nim.c update to Coup_Joueur affichage" />
+    <option name="LAST_COMMIT_MESSAGE" value="nim.c update to Coup_Joueur affichage" />
   </component>
 </project>
