@@ -133,10 +133,12 @@ int Lire_Entier(int BINF,int BSUP)
 void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   printf("Parametres du jeu :");
   
+  /* Nombre de lignes */
   printf("\nNombre de lignes :"); //on demande le nombre de lignes
   scanf("%d", nlig);
   *nlig = Lire_Entier(VMIN, VMAX);
 
+  /* Nombre de colonnes */
   printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
   scanf("%d", ncol);
   *ncol = Lire_Entier(VMIN, VMAX);
