@@ -129,34 +129,30 @@ int Lire_Entier(int BINF,int BSUP)
   return entier;
 }
 
-//Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...)
+/* Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...) */
 void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   printf("Parametres du jeu :");
 
   /* Nombre de lignes */
   printf("\nNombre de lignes :"); //on demande le nombre de lignes
-  scanf("%d", nlig);
   *nlig = Lire_Entier(VMIN, VMAX);
 
   /* Nombre de colonnes */
   printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
-  scanf("%d", ncol);
   *ncol = Lire_Entier(VMIN, VMAX);
 
   /* Choix niveau */
   printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
-  scanf("%d", niveau);
   *niveau = Lire_Entier(NVMIN, NVMAX); //on vérifie que le niveau est compris entre 1 et 4
 
   /* Choix joueur qui commence */
   printf("\n Qui commence ?\n"); //on demande qui commence
   printf("L'ordinateur (1) ou le joueur (2) ?\n"); //choix de qui commence
-  scanf("%d", next);
   *next = Lire_Entier(1, 2); //on redemande si next est différent de 1 ou 2
   printf("C'est parti !"); //afficher début partie
 }
 
 /* Affichage de la grille  */
 void affiche_grille(T_Case pion,int nlig,int ncol) {
-  
+
 }
