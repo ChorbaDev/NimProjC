@@ -135,9 +135,8 @@ int Lire_Entier(int BINF,int BSUP)
   {
     printf("Erreur");
   }
-
   return 0;
-=======
+}
     scanf("%d",&entier); //on lit l'entier
     getchar();
     correct = (entier >= BINF || entier <= BSUP);
