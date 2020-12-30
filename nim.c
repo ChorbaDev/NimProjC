@@ -132,31 +132,31 @@ int Lire_Entier(int BINF,int BSUP)
   {
     printf("Erreur");
   }
-  
+
   return 0;
 }
 
 //Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...)
 void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
-  printf("Parametres du jeu :"); 
+  printf("Parametres du jeu :");
   do
   {
     printf("\nNombre de lignes :"); //on demande le nombre de lignes
     scanf(nlig);
   } while (nlig < VMIN || nlig > VMAX); //on vérifie que le nombre de lignes est compris dans l'intervalle donnée
-  
+
   do
   {
     printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
     scanf(ncol);
   } while (ncol < VMIN || ncol > VMAX); //on vérifie que le nombre de colonnes est compris dans l'intervalle donnée
-  
+
   do
   {
     printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
     scanf(niveau);
   } while (niveau < 1 || niveau > 4); //on vérifie que le niveau est compris entre 1 et 4
-  
+
   printf("\n Qui commence ?\n"); //on demande qui commence
   do
   {
