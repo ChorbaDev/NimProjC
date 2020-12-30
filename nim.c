@@ -125,6 +125,7 @@ int Lire_Entier(int BINF,int BSUP)
   printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP); //on demande la saisie de l'entier et on affiche l'intervalle
   scanf(entier); //on lit l'entier
   } while (entier < BINF || entier > BSUP);
+  return 0;
 }
 
 //Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...)
