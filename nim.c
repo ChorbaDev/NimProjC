@@ -124,6 +124,8 @@ int Lire_Entier(int BINF,int BSUP)
   /* Définition des variables */
   int entier;
   int correct;
+
+  /* Programme */
   do {
     scanf("%d",&entier); //on lit l'entier
     getchar();
