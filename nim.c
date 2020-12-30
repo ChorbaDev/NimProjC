@@ -23,7 +23,6 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
     int i=pion.Colonne;
     int j=0;
     int n=0;
-    int k;
     //calcul du nb de cases voisines
     //calcul des voisines horizontalement
     while(i<ncol && j<2){
