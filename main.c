@@ -9,7 +9,7 @@ printf("\n\t\t-------------------\n\t\t   C est Parti !\n\t\t-------------------
 //le jeu
 T_Case pion={1,1},dernier_pion={nlig,ncol};
 T_Tab_Case tab_vois[4];
-int coup,nb_vois,nv_pos;
+int coup,nb_vois,nv_pos;//revoir nv pos
 int Equivalent;
 //int grille[VMAX][VMAX];
 //grille_nimber(grille,nlig,ncol);
@@ -24,7 +24,7 @@ else coup=-1;
       }
       else{
         nv_pos=Coup_Ordi(niveau,pion,tab_vois,nb_vois,nlig,ncol);
-        printf("L ordinateur deplace le pion en (%d,%d)\n",tab_vois[nv_pos].Ligne,tab_vois[nv_pos].Colonne);
+        printf("L'ordinateur déplace le pion en (%d,%d)\n",tab_vois[nv_pos].Ligne,tab_vois[nv_pos].Colonne);
       }
        pion=tab_vois[nv_pos];
       coup=-1*coup;

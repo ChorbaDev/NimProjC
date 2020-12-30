@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c changes to do on Voisines">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,9 +59,9 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -72,10 +73,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608559648848</updated>
-      <workItem from="1608559652984" duration="1447000" />
+      <workItem from="1608559652984" duration="4611000" />
       <workItem from="1608802988998" duration="5147000" />
       <workItem from="1608808364260" duration="646000" />
       <workItem from="1608809185684" duration="5381000" />
+      <workItem from="1609341930952" duration="1625000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -96,6 +98,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

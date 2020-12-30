@@ -23,6 +23,7 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
     int i=pion.Colonne;
     int j=0;
     int n=0;
+    int k;
     //calcul du nb de cases voisines
     //calcul des voisines horizontalement
     while(i<ncol && j<2){
@@ -49,7 +50,30 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
     //la valeur de nb_vois prend la valeur de n
     *nb_vois=n;
 }
+//
+//
+//une fonction qui gère le coup d’un joueur (cette fonction propose au joueur de choisir un coup parmi la liste des coups possibles).
+int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
+    int i,choix, nv_pos;
+    printf("\nChoisir la destination ");
+    for (i = 0; i < nb_vois ; i++) {
+        printf(" %d : (%d,%d) \t",i+1,tab_vois[i].Ligne,tab_vois[i].Colonne);
+    }
+    do {
+        scanf("%d",&choix);
+        if (choix>nb_vois){
+            printf("Erreur !");
+        }
+    } while (choix>nb_vois);
+    nv_pos=choix-1;
+    return nv_pos;
+}
+//
+//
+//une fonction qui gère le coup gagnant effectué par l’ordinateur(jouer une position gagnante si possible, sinon jouer un coup au hasard)
+/*int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
 
+}*/
 //
 int Coup_Ordi(int niveau,T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
   int proba,nv_pos;
@@ -65,7 +89,7 @@ int Coup_Ordi(int niveau,T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,
   }
   return nv_pos;
 }
-//pour trouver le Nimber d'un coodonne donnee
+//pour trouver le Nimber d'un coolonne donnee
 int Nimber(T_Case pion,int nlig,int ncol){
   int nim;
   int x=pion.Colonne,y=pion.Ligne;
