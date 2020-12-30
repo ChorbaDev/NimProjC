@@ -121,6 +121,7 @@ void clrscr()
 //Lecture d'un entier compris entre BINF et BSUP
 int Lire_Entier(int BINF,int BSUP)
 {
+  /* Définition des variables */
   int entier;
   int correct;
   do {
