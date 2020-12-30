@@ -120,18 +120,16 @@ void clrscr()
 //Lecture d'un entier compris entre BINF et BSUP
 int Lire_Entier(int BINF,int BSUP)
 {
-  int entier = 0;
-  if ()
-  {
+  int entier;
   do {
+    if (/* condition */)
+    {
+      /* code */
+    }
+    
   printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP); //on demande la saisie de l'entier et on affiche l'intervalle
   scanf("%d",&entier); //on lit l'entier
   } while (entier < BINF || entier > BSUP);
-  }
-  else
-  {
-    printf("Erreur");
-  }
   
   return 0;
 }
