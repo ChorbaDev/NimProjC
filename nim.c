@@ -61,6 +61,7 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
     }
     do {
         scanf("%d",&choix);
+        getchar();
         if (choix>nb_vois){
             printf("Erreur !");
         }
