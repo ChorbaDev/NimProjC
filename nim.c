@@ -149,10 +149,16 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   printf("\n Qui commence ?\n"); //on demande qui commence
   printf("L'ordinateur (1) ou le joueur (2) ?\n"); //choix de qui commence
   *next = Lire_Entier(1, 2); //on redemande si next est différent de 1 ou 2
-  printf("C'est parti !"); //afficher début partie
+  printf("C'est parti !\n"); //afficher début partie
 }
 
 /* Affichage de la grille  */
 void affiche_grille(T_Case pion,int nlig,int ncol) {
-
+  int i=1;
+  do
+  {
+    printf("%d|", i);
+    i++;
+  } while (i < ncol);
+  
 }
