@@ -159,13 +159,12 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
   int i=1;
 
   /* Affichage nombre de colonnes */
-  do {
-  printf("%d ", j);
-  j++;
-  } while (j < ncol);
-
+  for (j = 1; j < ncol; j++)
+  {
+    printf("%d ", j);
+  }
+   
   // Pour le nombre de lignes
-  int i=1;
   do
   {
     printf("%d|", i);
