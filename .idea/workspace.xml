@@ -11,11 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c changes to do on Voisines">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
-    </list>
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c coup_joueur&#10;à revoir la boucle de vérification pour l'erreur" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +73,7 @@
       <workItem from="1608802988998" duration="5147000" />
       <workItem from="1608808364260" duration="646000" />
       <workItem from="1608809185684" duration="5381000" />
-      <workItem from="1609341930952" duration="1625000" />
+      <workItem from="1609341930952" duration="1975000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -93,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608817923732</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="nim.c coup_joueur&#10;à revoir la boucle de vérification pour l'erreur">
+      <created>1609344144351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609344144351</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Création de la fonction voisines dans nim.c" />
     <MESSAGE value="nim.c changes to do on Voisines" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c changes to do on Voisines" />
+    <MESSAGE value="nim.c coup_joueur&#10;à revoir la boucle de vérification pour l'erreur" />
+    <option name="LAST_COMMIT_MESSAGE" value="nim.c coup_joueur&#10;à revoir la boucle de vérification pour l'erreur" />
   </component>
 </project>

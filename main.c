@@ -9,7 +9,7 @@ printf("\n\t\t-------------------\n\t\t   C est Parti !\n\t\t-------------------
 //le jeu
 T_Case pion={1,1},dernier_pion={nlig,ncol};
 T_Tab_Case tab_vois[4];
-int coup,nb_vois,nv_pos;//revoir nv pos
+int coup,nb_vois,nv_pos;
 int Equivalent;
 //int grille[VMAX][VMAX];
 //grille_nimber(grille,nlig,ncol);
