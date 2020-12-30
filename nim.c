@@ -128,6 +128,11 @@ int Lire_Entier(int BINF,int BSUP)
   scanf("%d",&entier); //on lit l'entier
   } while (entier < BINF || entier > BSUP);
   }
+  else
+  {
+    printf("Erreur");
+  }
+  
   return 0;
 }
 
