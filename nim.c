@@ -155,3 +155,8 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   *next = Lire_Entier(1, 2); //on redemande si next est différent de 1 ou 2
   printf("C'est parti !"); //afficher début partie
 }
+
+/* Affichage de la grille  */
+void affiche_grille(T_Case pion,int nlig,int ncol) {
+  
+}
