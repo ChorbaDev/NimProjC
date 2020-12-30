@@ -61,6 +61,7 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
     }
     do {
         scanf("%d",&choix);
+        getchar();
         if (choix>nb_vois){
             printf("Erreur !");
         }
@@ -120,9 +121,9 @@ void clrscr()
 //Lecture d'un entier compris entre BINF et BSUP
 int Lire_Entier(int BINF,int BSUP)
 {
-  int entier = 0;
-  if ()
-  {
+  /* Définition des variables */
+  int entier;
+  int correct;
   do {
   printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP); //on demande la saisie de l'entier et on affiche l'intervalle
   scanf("%d",&entier); //on lit l'entier
@@ -134,6 +135,16 @@ int Lire_Entier(int BINF,int BSUP)
   }
 
   return 0;
+=======
+    scanf("%d",&entier); //on lit l'entier
+    getchar();
+    correct = (entier >= BINF || entier <= BSUP);
+    if (correct == 0)
+    {
+      printf("Erreur\n");
+    }
+  } while (!correct);
+  return entier;
 }
 
 //Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...)
@@ -142,26 +153,26 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   do
   {
     printf("\nNombre de lignes :"); //on demande le nombre de lignes
-    scanf(nlig);
+    scanf("%d", nlig);
   } while (nlig < VMIN || nlig > VMAX); //on vérifie que le nombre de lignes est compris dans l'intervalle donnée
 
   do
   {
     printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
-    scanf(ncol);
+    scanf("%d", ncol);
   } while (ncol < VMIN || ncol > VMAX); //on vérifie que le nombre de colonnes est compris dans l'intervalle donnée
 
   do
   {
     printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
-    scanf(niveau);
+    scanf("%d", niveau);
   } while (niveau < 1 || niveau > 4); //on vérifie que le niveau est compris entre 1 et 4
 
   printf("\n Qui commence ?\n"); //on demande qui commence
   do
   {
     printf("L'ordinateur (1) ou le joueur (2) ?\n"); //choix de qui commence
-    scanf(next);
+    scanf("%d", next);
   } while (next < 1 || next > 2); //on redemande si next est différent de 1 ou 2
   printf("C'est parti !"); //afficher début partie
 }
