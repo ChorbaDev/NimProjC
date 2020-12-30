@@ -154,12 +154,15 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
 
 /* Affichage de la grille  */
 void affiche_grille(T_Case pion,int nlig,int ncol) {
+  /* Définition des variables */
   int j=1;
+  int i=1;
+
+  /* Affichage nombre de colonnes */
   do {
   printf("%d ", j);
   j++;
   } while (j < ncol);
-  //nombre de colonnes
 
   // Pour le nombre de lignes
   int i=1;
