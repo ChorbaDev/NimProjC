@@ -132,7 +132,7 @@ int Lire_Entier(int BINF,int BSUP)
     }
   } while (entier < BINF || entier > BSUP);
   
-  return 0;
+  return entier;
 }
 
 //Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...)
