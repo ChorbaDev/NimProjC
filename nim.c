@@ -130,14 +130,11 @@ int Lire_Entier(int BINF,int BSUP)
   printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP); //on demande la saisie de l'entier et on affiche l'intervalle
   scanf("%d",&entier); //on lit l'entier
   } while (entier < BINF || entier > BSUP);
-  }
   else
   {
     printf("Erreur");
   }
 
-  return 0;
-=======
     scanf("%d",&entier); //on lit l'entier
     getchar();
     correct = (entier >= BINF || entier <= BSUP);
@@ -145,7 +142,7 @@ int Lire_Entier(int BINF,int BSUP)
     {
       printf("Erreur\n");
     }
-  } while (!correct);
+   while (!correct);
   return entier;
 }
 
