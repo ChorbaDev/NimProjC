@@ -141,7 +141,7 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   
   printf("\nNombre de lignes :"); //on demande le nombre de lignes
   scanf("%d", nlig);
-  *nlig =Lire_Entier(VMIN,VMAX);
+  *nlig = Lire_Entier(VMIN, VMAX);
 
   do
   {
