@@ -124,23 +124,11 @@ int Lire_Entier(int BINF,int BSUP)
   /* Définition des variables */
   int entier;
   int correct;
-
   /* Programme */
   do {
-  printf("Saisir un entier compris entre %d et %d\n", BINF, BSUP); //on demande la saisie de l'entier et on affiche l'intervalle
-  scanf("%d",&entier); //on lit l'entier
-  } while (entier < BINF || entier > BSUP);
-  }
-  else
-  {
-    printf("Erreur");
-  }
-
-  return entier;
-
     scanf("%d",&entier); //on lit l'entier
     getchar();
-    correct = (entier >= BINF || entier <= BSUP);
+    correct = (entier >= BINF && entier <= BSUP);
     if (correct == 0)
     {
       printf("Erreur\n");
@@ -151,23 +139,11 @@ int Lire_Entier(int BINF,int BSUP)
 
 //Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...)
 void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
-<<<<<<< HEAD
-  printf("Parametres du jeu :"); 
-  printf("\nNombre de lignes :"); //on demande le nombre de lignes
-  *nlig = Lire_Entier(VMIN, VMAX);
-    
-  
-  printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
-  scanf("%d", ncol);
-  *ncol = Lire_Entier(VMIN, VMAX);
-  
-=======
   printf("Parametres du jeu :");
-  do
-  {
-    printf("\nNombre de lignes :"); //on demande le nombre de lignes
-    scanf("%d", nlig);
-  } while (nlig < VMIN || nlig > VMAX); //on vérifie que le nombre de lignes est compris dans l'intervalle donnée
+  
+  printf("\nNombre de lignes :"); //on demande le nombre de lignes
+  scanf("%d", nlig);
+  *nlig=Lire_Entier(VMIN,VMAX);
 
   do
   {
@@ -175,7 +151,6 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
     scanf("%d", ncol);
   } while (ncol < VMIN || ncol > VMAX); //on vérifie que le nombre de colonnes est compris dans l'intervalle donnée
 
->>>>>>> 58f4f1f84e08d0f1d0cef8be922922c3c8276d25
   do
   {
     printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
