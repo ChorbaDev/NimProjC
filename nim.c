@@ -52,20 +52,14 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
 //
 //une fonction qui gère le coup d’un joueur (cette fonction propose au joueur de choisir un coup parmi la liste des coups possibles).
 int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
-    int i,choix, nv_pos;
+    int i,nb;
     printf("\nChoisir la destination ");
     for (i = 0; i < nb_vois ; i++) {
         printf(" %d : (%d,%d) \t",i+1,tab_vois[i].Ligne,tab_vois[i].Colonne);
     }
-    do {
-        scanf("%d",&choix);
-        getchar();
-        if (choix>nb_vois){
-            printf("Erreur !");
-        }
-    } while (choix>nb_vois);
-    nv_pos=choix-1;
-    return nv_pos;
+
+    nb=Lire_Entier(1,nb_vois);
+    return (nb-1);
 }
 //
 //
