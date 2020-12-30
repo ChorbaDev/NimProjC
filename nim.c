@@ -128,10 +128,9 @@ int Lire_Entier(int BINF,int BSUP)
     correct = (entier > BINF || entier < BSUP);
     if (correct == 0)
     {
-      printf("Erreur");
+      printf("Erreur\n");
     }
-  } while (entier < BINF || entier > BSUP);
-  
+  } while (!correct);
   return entier;
 }
 
