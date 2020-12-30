@@ -11,7 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c lire entier" />
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c update to voisines (usless var)">
+      <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +75,7 @@
       <workItem from="1608802988998" duration="5147000" />
       <workItem from="1608808364260" duration="646000" />
       <workItem from="1608809185684" duration="5381000" />
-      <workItem from="1609341930952" duration="5408000" />
+      <workItem from="1609341930952" duration="5784000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -117,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609349759045</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="nim.c update to voisines (usless var)">
+      <created>1609350736256</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609350736256</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +191,7 @@
     <MESSAGE value="nim.c coup_joueur&#10;à revoir la boucle de vérification pour l'erreur&#10;some comments on main" />
     <MESSAGE value="nim.c modif coup_joueur" />
     <MESSAGE value="nim.c lire entier" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c lire entier" />
+    <MESSAGE value="nim.c update to voisines (usless var)" />
+    <option name="LAST_COMMIT_MESSAGE" value="nim.c update to voisines (usless var)" />
   </component>
 </project>
