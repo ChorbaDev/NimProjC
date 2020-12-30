@@ -55,9 +55,9 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
     int i,nb;
     printf("\nChoisir la destination ");
     for (i = 0; i < nb_vois ; i++) {
-        printf(" %d : (%d,%d) \t",i+1,tab_vois[i].Ligne,tab_vois[i].Colonne);
+        printf(" %d : (%d,%d) ",i+1,tab_vois[i].Ligne,tab_vois[i].Colonne);
     }
-
+    printf("\n---> ");
     nb=Lire_Entier(1,nb_vois);
     return (nb-1);
 }
