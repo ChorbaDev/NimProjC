@@ -132,7 +132,7 @@ int Lire_Entier(int BINF,int BSUP)
 //Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...)
 void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   printf("Parametres du jeu :");
-  
+
   /* Nombre de lignes */
   printf("\nNombre de lignes :"); //on demande le nombre de lignes
   scanf("%d", nlig);
@@ -143,17 +143,15 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   scanf("%d", ncol);
   *ncol = Lire_Entier(VMIN, VMAX);
 
-  do
-  {
-    printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
-    scanf("%d", niveau);
-  } while (niveau < 1 || niveau > 4); //on vérifie que le niveau est compris entre 1 et 4
+  /* Choix niveau */
+  printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
+  scanf("%d", niveau);
+  *niveau = Lire_Entier(NVMIN, NVMAX); //on vérifie que le niveau est compris entre 1 et 4
 
+  /* Choix joueur qui commence */
   printf("\n Qui commence ?\n"); //on demande qui commence
-  do
-  {
-    printf("L'ordinateur (1) ou le joueur (2) ?\n"); //choix de qui commence
-    scanf("%d", next);
-  } while (next < 1 || next > 2); //on redemande si next est différent de 1 ou 2
+  printf("L'ordinateur (1) ou le joueur (2) ?\n"); //choix de qui commence
+  scanf("%d", next);
+  *next = Lire_Entier(1, 2); //on redemande si next est différent de 1 ou 2
   printf("C'est parti !"); //afficher début partie
 }
