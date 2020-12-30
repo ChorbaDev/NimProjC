@@ -137,11 +137,9 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   scanf("%d", nlig);
   *nlig = Lire_Entier(VMIN, VMAX);
 
-  do
-  {
-    printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
-    scanf("%d", ncol);
-  } while (ncol < VMIN || ncol > VMAX); //on vérifie que le nombre de colonnes est compris dans l'intervalle donnée
+  printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
+  scanf("%d", ncol);
+  *ncol = Lire_Entier(VMIN, VMAX);
 
   do
   {
