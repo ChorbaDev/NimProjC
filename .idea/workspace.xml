@@ -11,8 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c update to Coup_Joueur affichage">
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c update to Coup_Joueur boucle (still work to do)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nim.h" beforeDir="false" afterPath="$PROJECT_DIR$/nim.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +50,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="NimProjC" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NimProjC" TARGET_NAME="NimProjC" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NimProjC" RUN_TARGET_NAME="NimProjC">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -60,6 +58,11 @@
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -75,7 +78,8 @@
       <workItem from="1608802988998" duration="5147000" />
       <workItem from="1608808364260" duration="646000" />
       <workItem from="1608809185684" duration="5381000" />
-      <workItem from="1609341930952" duration="7683000" />
+      <workItem from="1609341930952" duration="8377000" />
+      <workItem from="1609499425498" duration="3833000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -147,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609352429271</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="nim.c update to Coup_Joueur boucle (still work to do)">
+      <created>1609352831304</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1609352831304</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +222,7 @@
     <MESSAGE value="nim.c update to voisines while correction and T_case into place" />
     <MESSAGE value="nim.c update to Coup_Joueur optimisation and bug fixes" />
     <MESSAGE value="nim.c update to Coup_Joueur affichage" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c update to Coup_Joueur affichage" />
+    <MESSAGE value="nim.c update to Coup_Joueur boucle (still work to do)" />
+    <option name="LAST_COMMIT_MESSAGE" value="nim.c update to Coup_Joueur boucle (still work to do)" />
   </component>
 </project>

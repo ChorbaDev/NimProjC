@@ -69,9 +69,24 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
 //
 //
 //une fonction qui gère le coup gagnant effectué par l’ordinateur(jouer une position gagnante si possible, sinon jouer un coup au hasard)
-/*int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
+int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
+    int pos,nv_pos,ver_pos;//nimber de la position actuelle, nouvelle position, nimber postition hypothétique
+    int i=0;
+    T_Case ver_case;//position d'un pion hypothetique
+    pos = Nimber(pion,nlig,ncol);
+    if (pos==1) {
+        do {
+            ver_case = tab_vois[i];
+            ver_pos = Nimber(ver_case, nlig, ncol);
+            i++;
+        } while (ver_pos != 0);
+        nv_pos = i;
+    }
+    else
+        nv_pos=Coup_Ordi_Hasard(nb_vois);
+    return nv_pos;
 
-}*/
+}
 //
 int Coup_Ordi(int niveau,T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
   int proba,nv_pos;
@@ -112,7 +127,7 @@ int Nimber(T_Case pion,int nlig,int ncol){
 //"TO CLEAR THE SCREEN"
 void clrscr()
 {
-    system("@cls||clear");
+    system("@cls||clear");//problème lors de l'execution sur Ubuntu sh: 1: @cls: not found
 }
 
 //Lecture d'un entier compris entre BINF et BSUP
