@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment=".">
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="ajout de commentaire dans affiche_grille">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
@@ -64,6 +64,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="NimProjC" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NimProjC" TARGET_NAME="NimProjC" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NimProjC" RUN_TARGET_NAME="NimProjC">
@@ -88,6 +89,7 @@
       <workItem from="1609499425498" duration="4223000" />
       <workItem from="1609504894214" duration="599000" />
       <workItem from="1609622671606" duration="1626000" />
+      <workItem from="1609625324932" duration="678000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -194,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609623229791</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ajout de commentaire dans affiche_grille">
+      <created>1609625391081</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1609625391081</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +255,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -299,6 +308,7 @@
     <MESSAGE value="nim.c coup_ordi_gagnant done&#10;ajout de commentaire dans la fct clrscr" />
     <MESSAGE value="nim.c affiche grille" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="ajout de commentaire dans affiche_grille" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout de commentaire dans affiche_grille" />
   </component>
 </project>

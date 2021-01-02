@@ -181,9 +181,10 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
   int i=1;
 
   /* Affichage nombre de colonnes */
+    printf(" ");
   for (j = 1; j <= ncol; j++)
   {
-    printf("%d ", j); //Ici on affiche les numéros de chaque colonne
+    printf(" %d", j); //Ici on affiche les numéros de chaque colonne
   }
   printf("\n");
 
@@ -191,13 +192,13 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
  
   for (i = 1; i <= nlig; i++)
   {
-    printf("%d", i); //On affiche le numéro de la ligne
+    printf("%d|", i); //On affiche le numéro de la ligne
     for (k = 1; k <= ncol; k++)
     {
-      if((pion.Ligne==i)&&(pion.Colonne==j))
-        printf(" 0 "); 
+      if((pion.Ligne==i)&&(pion.Colonne==k))
+        printf("0|");
       else
-        printf("|_|");
+        printf("-|");
     }
     printf("\n"); //retour à la ligne
   }
