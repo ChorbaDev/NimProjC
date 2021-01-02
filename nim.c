@@ -201,5 +201,4 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
     }
     printf("\n"); //retour à la ligne
   }
-  return 0; 
 }

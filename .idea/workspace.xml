@@ -32,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lyBrPyFjZl4KlAbSbYhKUolOlI" />
@@ -74,6 +79,7 @@
       <workItem from="1609341930952" duration="8377000" />
       <workItem from="1609499425498" duration="4223000" />
       <workItem from="1609504894214" duration="599000" />
+      <workItem from="1609622671606" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -159,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609504548043</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="nim.c affiche grille">
+      <created>1609622975392</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609622975392</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +238,7 @@
     <MESSAGE value="nim.c update to Coup_Joueur affichage" />
     <MESSAGE value="nim.c update to Coup_Joueur boucle (still work to do)" />
     <MESSAGE value="nim.c coup_ordi_gagnant done&#10;ajout de commentaire dans la fct clrscr" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c coup_ordi_gagnant done&#10;ajout de commentaire dans la fct clrscr" />
+    <MESSAGE value="nim.c affiche grille" />
+    <option name="LAST_COMMIT_MESSAGE" value="nim.c affiche grille" />
   </component>
 </project>
