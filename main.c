@@ -17,6 +17,7 @@ if (next==2)  coup=1;
 else coup=-1;
   do{
       affiche_grille(pion,nlig,ncol);
+      printf("\n");
       Voisines (pion,tab_vois,&nb_vois,nlig,ncol);
       if(coup==1){
         printf("A toi de jouer !\n");

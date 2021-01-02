@@ -74,13 +74,23 @@ int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int
     int i=0;
     T_Case ver_case;//position d'un pion hypothetique
     pos = Nimber(pion,nlig,ncol);
+//    printf("pos=%d\n",pos);
     if (pos==1) {
         do {
             ver_case = tab_vois[i];
+//            printf("ver_case=%d \n",ver_case);
             ver_pos = Nimber(ver_case, nlig, ncol);
-            i++;
+            if (ver_pos==0){
+                break;
+            }
+            else
+//            printf("ver_pos=%d \n",ver_pos);
+                i++;
+//            printf("i=%d\n",i);
         } while (ver_pos != 0);
         nv_pos = i;
+//        printf("nv_pos=%d \n", nv_pos);
+
     }
     else
         nv_pos=Coup_Ordi_Hasard(nb_vois);
@@ -92,7 +102,7 @@ int Coup_Ordi(int niveau,T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,
   int proba,nv_pos;
   switch(niveau){
     case 1:nv_pos=Coup_Ordi_Hasard(nb_vois);break;
-    case 4:nv_pos=Coup_Ordi_Gagnant(pion,tab_vois,nb_vois,nlig,ncol);break;
+    case 4:nv_pos=Coup_Ordi_Gagnant(pion,tab_vois,nb_vois,nlig,ncol); break;
     default:
     proba=Hasard(1,3);
       if (niveau==2)
@@ -109,8 +119,10 @@ int Nimber(T_Case pion,int nlig,int ncol){
     while(y!=nlig && x!=ncol){
       x++;
       y++;
+//      printf("y=%d,x=%d \n",y,x);
     }
     nim=(x==ncol)?(((nlig-y)%3==0)?0:1):(((ncol-x)%3==0)?0:1);
+//    printf("nim=%d\n",nim);
    /*if(x==ncol)
       if((nlig-y)%3==0)
         nim=0;
