@@ -11,11 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c réglé les problèmes d'affichages dans affiche grille">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
-    </list>
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="-nim.c : correction d'un bug coup_ordi_gangnant&#10;&#10;Problème: nv_pos était incorrecte car l'incrementation se faisait avant la vérification.&#10;&#10;Solution: on verifie avec un if et on break si vrai.&#10;&#10;-main.c : ajustement de l'affichage" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +91,7 @@
       <workItem from="1609499425498" duration="4223000" />
       <workItem from="1609504894214" duration="599000" />
       <workItem from="1609622671606" duration="1626000" />
-      <workItem from="1609625324932" duration="4158000" />
+      <workItem from="1609625324932" duration="4523000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -216,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609626245510</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="nim.c correction d'un bug coup_ordi_gangnant&#10;Problème: nv_pos était incorrecte car l'incrementation se faisait avant la vérification.&#10;Solution: on verifie avec un if et on break si vrai">
+      <created>1609629486162</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1609629486162</updated>
+    </task>
+    <task id="LOCAL-00019" summary="-nim.c : correction d'un bug coup_ordi_gangnant&#10;&#10;Problème: nv_pos était incorrecte car l'incrementation se faisait avant la vérification.&#10;&#10;Solution: on verifie avec un if et on break si vrai.&#10;&#10;-main.c : ajustement de l'affichage">
+      <created>1609629707777</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1609629707777</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +278,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -323,6 +333,8 @@
     <MESSAGE value="." />
     <MESSAGE value="ajout de commentaire dans affiche_grille" />
     <MESSAGE value="nim.c réglé les problèmes d'affichages dans affiche grille" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c réglé les problèmes d'affichages dans affiche grille" />
+    <MESSAGE value="nim.c correction d'un bug coup_ordi_gangnant&#10;Problème: nv_pos était incorrecte car l'incrementation se faisait avant la vérification.&#10;Solution: on verifie avec un if et on break si vrai" />
+    <MESSAGE value="-nim.c : correction d'un bug coup_ordi_gangnant&#10;&#10;Problème: nv_pos était incorrecte car l'incrementation se faisait avant la vérification.&#10;&#10;Solution: on verifie avec un if et on break si vrai.&#10;&#10;-main.c : ajustement de l'affichage" />
+    <option name="LAST_COMMIT_MESSAGE" value="-nim.c : correction d'un bug coup_ordi_gangnant&#10;&#10;Problème: nv_pos était incorrecte car l'incrementation se faisait avant la vérification.&#10;&#10;Solution: on verifie avec un if et on break si vrai.&#10;&#10;-main.c : ajustement de l'affichage" />
   </component>
 </project>
