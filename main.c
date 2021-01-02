@@ -37,3 +37,6 @@ else coup=-1;
     else printf("Vous avez perdu. GAME OVER");
   return 0;
 }
+
+
+//prochaine étape ajouter un delai

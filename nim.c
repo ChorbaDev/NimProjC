@@ -216,3 +216,4 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
   }
   //pas besoin de return dans un void
 }
+//prochaine étape ajouter un delai
