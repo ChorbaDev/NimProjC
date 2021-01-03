@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c coup_ordi_gangnant while to for bug présent">
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c coup_ordi_gangnant fixed bug">
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,7 @@
       <workItem from="1609504894214" duration="599000" />
       <workItem from="1609622671606" duration="1626000" />
       <workItem from="1609625324932" duration="5514000" />
-      <workItem from="1609678120182" duration="2012000" />
+      <workItem from="1609678120182" duration="2404000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609680005930</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="nim.c coup_ordi_gangnant fixed bug">
+      <created>1609680626883</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1609680626883</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +368,7 @@
     <MESSAGE value="." />
     <MESSAGE value="nim.c affiche_grille tableau modif" />
     <MESSAGE value="nim.c coup_ordi_gangnant while to for bug présent" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c coup_ordi_gangnant while to for bug présent" />
+    <MESSAGE value="nim.c coup_ordi_gangnant fixed bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="nim.c coup_ordi_gangnant fixed bug" />
   </component>
 </project>
