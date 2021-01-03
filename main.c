@@ -16,6 +16,7 @@ int Equivalent;
 if (next==2)  coup=1;
 else coup=-1;
   do{
+      printf("\n");
       affiche_grille(pion,nlig,ncol);
       printf("\n");
       Voisines (pion,tab_vois,&nb_vois,nlig,ncol);
