@@ -140,7 +140,7 @@ int Lire_Entier(int BINF,int BSUP)
   /* Définition des variables */
   int entier;
   int correct;
-  /* Programme */
+  /* Fonction */
   do {
     scanf("%d",&entier); //on lit l'entier
     getchar();
@@ -197,6 +197,6 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
       else
         printf("-|");
     }
-    printf("\n"); //retour à la ligne
+    printf("\n");
   }
 }
