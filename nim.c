@@ -71,26 +71,21 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
 //une fonction qui gère le coup gagnant effectué par l’ordinateur(jouer une position gagnante si possible, sinon jouer un coup au hasard)
 int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
     int pos,nv_pos,ver_pos;//nimber de la position actuelle, nouvelle position, nimber postition hypothétique
-    int i=0;
+    int i;
     T_Case ver_case;//position d'un pion hypothetique
     pos = Nimber(pion,nlig,ncol);
-//    printf("pos=%d\n",pos);
     if (pos==1) {
-        do {
+        for (i = 0;  i<nb_vois ; i++)
+        {
             ver_case = tab_vois[i];
-//            printf("ver_case=%d \n",ver_case);
             ver_pos = Nimber(ver_case, nlig, ncol);
-            if (ver_pos==0){
+            if (ver_pos==0)
+            {
                 break;
             }
-            else
-//            printf("ver_pos=%d \n",ver_pos);
-                i++;
-//            printf("i=%d\n",i);
-        } while (ver_pos != 0);
-        nv_pos = i;
-//        printf("nv_pos=%d \n", nv_pos);
 
+        nv_pos = i;
+        }
     }
     else
         nv_pos=Coup_Ordi_Hasard(nb_vois);
@@ -119,10 +114,8 @@ int Nimber(T_Case pion,int nlig,int ncol){
     while(y!=nlig && x!=ncol){
       x++;
       y++;
-//      printf("y=%d,x=%d \n",y,x);
     }
     nim=(x==ncol)?(((nlig-y)%3==0)?0:1):(((ncol-x)%3==0)?0:1);
-//    printf("nim=%d\n",nim);
    /*if(x==ncol)
       if((nlig-y)%3==0)
         nim=0;
