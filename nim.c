@@ -60,6 +60,7 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
     do {
         printf("\n---> ");
         scanf("%d",&choix);
+        getchar();
         if (choix>nb_vois){
             printf("Erreur !");
         }
@@ -180,22 +181,29 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
   /* Définition des variables */
   int j,i;
   /* Affichage nombre de colonnes */
-    printf(" ");
+    printf("  ");
   for (j = 1; j <= ncol; j++)
   {
+  //  if(j<10) printf("%s\n", );
     printf(" %d", j); //Ici on affiche les numéros de chaque colonne
   }
   printf("\n");
   /* Affichage nombre de lignes */
   for (i = 1; i <= nlig; i++)
   {
+    if(i<10) printf(" ");
     printf("%d|", i); //On affiche le numéro de la ligne
     for (j = 1; j <= ncol; j++)
     {
-      if((pion.Ligne==i)&&(pion.Colonne==j))
+      if((pion.Ligne==i)&&(pion.Colonne==j)){
+        if(j>9) printf(" ");
         printf("0|");
-      else
-        printf("-|");
+      }
+      else{
+        if(j>9) printf("-");
+          printf("-|");
+      }
+
     }
     printf("\n");
   }
