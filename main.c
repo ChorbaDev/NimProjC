@@ -26,7 +26,7 @@ else coup=-1;
       }
       else{
         nv_pos=Coup_Ordi(niveau,pion,tab_vois,nb_vois,nlig,ncol);
-        printf("L'ordinateur déplace le pion en (%d,%d)\n",tab_vois[nv_pos].Ligne,tab_vois[nv_pos].Colonne);
+        printf("L'ordinateur deplace le pion en (%d,%d)\n",tab_vois[nv_pos].Ligne,tab_vois[nv_pos].Colonne);
       }
        pion=tab_vois[nv_pos];
       coup=-1*coup;

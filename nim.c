@@ -145,13 +145,13 @@ int Lire_Entier(int BINF,int BSUP)
   do {
     scanf("%d",&entier); //on lit l'entier
     getchar();
-    correct = (entier >= BINF && entier <= BSUP);
-    if (correct == 0)
+    correct = (entier >= BINF && entier <= BSUP); //l'entier est correct si il est compris entre VMIN et VMAX
+    if (correct == 0) //Si l'entier n'est pas correct (en dehors de l'intervalle)
     {
-      printf("Erreur !\n");
+      printf("Erreur !\n"); //On affiche un message d'erreur
     }
   } while (!correct);
-  return entier;
+  return entier; //On retourne l'entier
 }
 
 /* Affichage des paramètres du jeu (nombre colonnes/lignes/niveau...) */
