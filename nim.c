@@ -83,9 +83,8 @@ int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int
             {
                 break;
             }
-
-        nv_pos = i;
         }
+              nv_pos = i;
     }
     else
         nv_pos=Coup_Ordi_Hasard(nb_vois);
@@ -148,7 +147,7 @@ int Lire_Entier(int BINF,int BSUP)
     correct = (entier >= BINF && entier <= BSUP);
     if (correct == 0)
     {
-      printf("Erreur\n");
+      printf("Erreur !\n");
     }
   } while (!correct);
   return entier;
@@ -200,5 +199,4 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
     }
     printf("\n"); //retour à la ligne
   }
-  SDL_Delay(1000); //délai : on attends une seconde
 }
