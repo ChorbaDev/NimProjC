@@ -170,47 +170,40 @@ void Parametres(int *nlig, int *ncol, int *niveau, int *next) {
   *nlig = Lire_Entier(VMIN, VMAX);
 
   /* Nombre de colonnes */
-  printf("\nNombre de colonnes:"); //on demande le nombre de colonnes
+  printf("Nombre de colonnes:"); //on demande le nombre de colonnes
   *ncol = Lire_Entier(VMIN, VMAX);
 
   /* Choix niveau */
-  printf("\nNiveau de 1 a 4 :"); //on demande de choisir le niveau
+  printf("Niveau de %d a %d : ",NVMIN,NVMAX); //on demande de choisir le niveau
   *niveau = Lire_Entier(NVMIN, NVMAX); //on vérifie que le niveau est compris entre 1 et 4
 
   /* Choix joueur qui commence */
-  printf("\n Qui commence ?\n"); //on demande qui commence
-  printf("L'ordinateur (1) ou le joueur (2) ?\n"); //choix de qui commence
-  *next = Lire_Entier(1, 2); //on redemande si next est différent de 1 ou 2
-  printf("C'est parti !\n"); //afficher début partie
+  printf("Qui commence ?\n"); //on demande qui commence
+  printf("L'ordinateur (1) ou le joueur (2) ? "); //choix de qui commence
+  *next = Lire_Entier(1,2); //on redemande si next est différent de 1 ou 2
 }
 
 /* Affichage de la grille  */
 void affiche_grille(T_Case pion,int nlig,int ncol) {
-
   /* Définition des variables */
-  int k=1;
-  int j=1;
-  int i=1;
-
+  int j,i;
   /* Affichage nombre de colonnes */
     printf(" ");
   for (j = 1; j <= ncol; j++)
   {
-    printf(" %d", j); //Ici on affiche les numéros de chaque colonne
+    printf(" %d ", j); //Ici on affiche les numéros de chaque colonne
   }
   printf("\n");
-
   /* Affichage nombre de lignes */
- 
   for (i = 1; i <= nlig; i++)
   {
     printf("%d|", i); //On affiche le numéro de la ligne
-    for (k = 1; k <= ncol; k++)
+    for (j = 1; j <= ncol; j++)
     {
-      if((pion.Ligne==i)&&(pion.Colonne==k))
-        printf("0|");
+      if((pion.Ligne==i)&&(pion.Colonne==j))
+        printf(" 0 ");
       else
-        printf("-|");
+        printf("|-|");
     }
     printf("\n"); //retour à la ligne
   }
