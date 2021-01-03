@@ -11,7 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c coup_ordi_gangnant fixed bug">
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c lire entier modif">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +95,7 @@
       <workItem from="1609504894214" duration="599000" />
       <workItem from="1609622671606" duration="1626000" />
       <workItem from="1609625324932" duration="5514000" />
-      <workItem from="1609678120182" duration="2404000" />
+      <workItem from="1609678120182" duration="2745000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -257,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609680626883</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="nim.c lire entier modif">
+      <created>1609681149464</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1609681149464</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,6 +377,7 @@
     <MESSAGE value="nim.c affiche_grille tableau modif" />
     <MESSAGE value="nim.c coup_ordi_gangnant while to for bug présent" />
     <MESSAGE value="nim.c coup_ordi_gangnant fixed bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c coup_ordi_gangnant fixed bug" />
+    <MESSAGE value="nim.c lire entier modif" />
+    <option name="LAST_COMMIT_MESSAGE" value="nim.c lire entier modif" />
   </component>
 </project>

@@ -84,7 +84,7 @@ int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int
                 break;
             }
         }
-              nv_pos = i;
+        nv_pos = i;
     }
     else
         nv_pos=Coup_Ordi_Hasard(nb_vois);
