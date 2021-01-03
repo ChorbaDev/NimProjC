@@ -207,6 +207,5 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
     }
     printf("\n"); //retour à la ligne
   }
-  SDL_Delay(1000); //on attends une seconde
+  SDL_Delay(1000); //délai : on attends une seconde
 }
-//prochaine étape ajouter un delai
