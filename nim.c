@@ -40,10 +40,7 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
     *nb_vois=n;
 }
 
-//
-//
 //une fonction qui gère le coup d’un joueur (cette fonction propose au joueur de choisir un coup parmi la liste des coups possibles).
-
 int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
     //initialisation
     int i,choix;
@@ -66,10 +63,8 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
     return (choix-1);
 }
 
-//
-//
-//une fonction qui gère le coup gagnant effectué par l’ordinateur(jouer une position gagnante si possible, sinon jouer un coup au hasard)
 
+//une fonction qui gère le coup gagnant effectué par l’ordinateur(jouer une position gagnante si possible, sinon jouer un coup au hasard)
 int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
     //initialisation
     int pos,nv_pos,ver_pos;//nimber de la position actuelle, nouvelle position, nimber postition hypothétique
@@ -102,32 +97,39 @@ int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int
 
 }
 
-//
-//
-//
+//la fonction qui determine le coup de l'ordinateur qui depend de niveau
 int Coup_Ordi(int niveau,T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
   int proba,nv_pos;
   switch(niveau){
-    case 1:nv_pos=Coup_Ordi_Hasard(nb_vois);break;
-    case 4:nv_pos=Coup_Ordi_Gagnant(pion,tab_vois,nb_vois,nlig,ncol); break;
+    case 1:nv_pos=Coup_Ordi_Hasard(nb_vois);break; //si le niveau=1 tout les coups seront au hasard
+    case 4:nv_pos=Coup_Ordi_Gagnant(pion,tab_vois,nb_vois,nlig,ncol); break; //si le niveau=4 tout les coups seront des coup gagnant
     default:
-    proba=Hasard(1,3);
+    proba=Hasard(1,3);//un nombre au hasard entre 1 et 3
       if (niveau==2)
-          nv_pos=(proba<=2)?Coup_Ordi_Hasard(nb_vois):Coup_Ordi_Gagnant(pion,tab_vois,nb_vois,nlig,ncol);
+          nv_pos=(proba==3)?Coup_Ordi_Gagnant(pion,tab_vois,nb_vois,nlig,ncol):Coup_Ordi_Hasard(nb_vois); //si le niveau=2 et si proba=3 et <> 2 et 1 c.a.d 1/3 de la probabilite coup gagnant sinon coup hasard
       else
-         nv_pos=(proba==3)?Coup_Ordi_Hasard(nb_vois):Coup_Ordi_Gagnant(pion,tab_vois,nb_vois,nlig,ncol);
+         nv_pos=(proba==3)?Coup_Ordi_Hasard(nb_vois):Coup_Ordi_Gagnant(pion,tab_vois,nb_vois,nlig,ncol);//si le niveau=3 et si proba=3 et <> 2 et 1 c.a.d 1/3 de la probabilite coup au hasard sinon coup gagnant
   }
-  return nv_pos;
+  return nv_pos; //c'est une fonction avec retoure ce qui est la position de coup de l'ordinateur dans le tableau des voisines
 }
+
+
 //pour trouver le Nimber d'un coolonne donnee
 int Nimber(T_Case pion,int nlig,int ncol){
   int nim;
   int x=pion.Colonne,y=pion.Ligne;
+  //on va decaler le pion vers l'avant jusqu'a on se retrouve dans la derniere ligne ou dernier colonne
     while(y!=nlig && x!=ncol){
       x++;
       y++;
     }
+  //on remarque que dans le nimber de la derniere case de la grille est 0
+  //donc on peut determiner les nimber de chaque case dans le dernier colonne ou  ligne
+  //puisque on a decaler le pion, on est dans le dernier ligne/colonne
+  //on remarque que si on est dans la derniere colonne : si le nombre de ligne - position de ligne actuelle(apres decalage) mod 3 egale a 0 donc le nimber c'est 0 sinon c'est 1
+  //on remarque que si on est dans la derniere ligne : si le nombre de colonne - position de colonne actuelle(apres decalage) mod 3 egale a 0 donc le nimber c'est 0 sinon c'est 1
     nim=(x==ncol)?(((nlig-y)%3==0)?0:1):(((ncol-x)%3==0)?0:1);
+//c'est juste l'ecriture plus detaille de la ligne juste au dessus
    /*if(x==ncol)
       if((nlig-y)%3==0)
         nim=0;
@@ -140,11 +142,6 @@ int Nimber(T_Case pion,int nlig,int ncol){
           nim=1;
      */
      return nim;
-}
-//"TO CLEAR THE SCREEN"
-void clrscr()
-{
-    system("@cls||clear");//problème lors de l'execution sur Ubuntu sh: 1: @cls: not found
 }
 
 //Lecture d'un entier compris entre BINF et BSUP
