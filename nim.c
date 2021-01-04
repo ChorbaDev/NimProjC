@@ -208,11 +208,11 @@ void affiche_grille(T_Case pion,int nlig,int ncol) {
     for (j = 1; j <= ncol; j++)
     {
       if((pion.Ligne==i)&&(pion.Colonne==j)){
-        if(j>9) printf(" ");
+        if(j>9) printf(" "); //affichage d'un espace pour garder l'affichage de la grille
         printf("0|");
       }
       else{
-        if(j>9) printf("-");
+        if(j>9) printf("-"); //on affiche un autre - pour ne pas que l'affichage soit décalé
           printf("-|");
       }
 
