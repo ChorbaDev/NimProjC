@@ -40,4 +40,4 @@ else coup=-1;
 }
 
 
-//prochaine étape ajouter un delai
+

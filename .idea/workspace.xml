@@ -11,8 +11,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="nim.c lire entier modif">
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,11 +73,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,7 +91,9 @@
       <workItem from="1609504894214" duration="599000" />
       <workItem from="1609622671606" duration="1626000" />
       <workItem from="1609625324932" duration="5514000" />
-      <workItem from="1609678120182" duration="2745000" />
+      <workItem from="1609678120182" duration="3235000" />
+      <workItem from="1609683463712" duration="1257000" />
+      <workItem from="1609765943676" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -265,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609681149464</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary=".">
+      <created>1609681394489</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1609681394489</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,11 +378,11 @@
     <MESSAGE value="nim.c réglé les problèmes d'affichages dans affiche grille" />
     <MESSAGE value="nim.c correction d'un bug coup_ordi_gangnant&#10;Problème: nv_pos était incorrecte car l'incrementation se faisait avant la vérification.&#10;Solution: on verifie avec un if et on break si vrai" />
     <MESSAGE value="-nim.c : correction d'un bug coup_ordi_gangnant&#10;&#10;Problème: nv_pos était incorrecte car l'incrementation se faisait avant la vérification.&#10;&#10;Solution: on verifie avec un if et on break si vrai.&#10;&#10;-main.c : ajustement de l'affichage" />
-    <MESSAGE value="." />
     <MESSAGE value="nim.c affiche_grille tableau modif" />
     <MESSAGE value="nim.c coup_ordi_gangnant while to for bug présent" />
     <MESSAGE value="nim.c coup_ordi_gangnant fixed bug" />
     <MESSAGE value="nim.c lire entier modif" />
-    <option name="LAST_COMMIT_MESSAGE" value="nim.c lire entier modif" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
