@@ -10,12 +10,14 @@ T_Case pion={1,1},dernier_pion={nlig,ncol};
 T_Tab_Case tab_vois[4];
 int coup,nb_vois,nv_pos;
 int Equivalent;
-if (next==2)  coup=1;
-else coup=-1;
+if (next==2)
+  coup=1;
+else
+  coup=-1;
   do{
-      printf("\n");
+        printf("\n");
       affiche_grille(pion,nlig,ncol); //l'affichage de la grille avec la position actuelle du pion
-      printf("\n");
+        printf("\n");
       Voisines (pion,tab_vois,&nb_vois,nlig,ncol); //remplir le tableau des voisines a chaque fois la position de pion ce change
       if(coup==1){
         printf("A toi de jouer !\n");
@@ -26,7 +28,7 @@ else coup=-1;
         printf("L'ordinateur deplace le pion en (%d,%d)\n",tab_vois[nv_pos].Ligne,tab_vois[nv_pos].Colonne);
       }
        pion=tab_vois[nv_pos]; // affecter a pion la nouvelle position
-      coup=-1*coup; // pour determiner le coup, 1 pour le joueur et -1 pour l'ordinateur
+        coup=-1*coup; // pour determiner le coup, 1 pour le joueur et -1 pour l'ordinateur
       Equivalent=(dernier_pion.Ligne==pion.Ligne)&&(dernier_pion.Colonne==pion.Colonne); // verifier si la position de pion et egale a la dernier case dans la grille
     }while (!Equivalent);
     //fin de jeu
