@@ -2,14 +2,16 @@
 int main(){
   srand((unsigned int)time(NULL));
 //saisie des Parametres
+/* Définition des variables */
 int nlig,ncol,niveau,next;
+int coup,nb_vois,nv_pos;
+int Equivalent;
+/* Programme princiapal */
 Parametres(&nlig,&ncol,&niveau,&next);
 printf("\n\t\t-------------------\n\t\t   C est Parti !\n\t\t-------------------\n");
 //le jeu
 T_Case pion={1,1},dernier_pion={nlig,ncol};
 T_Tab_Case tab_vois[4];
-int coup,nb_vois,nv_pos;
-int Equivalent;
 if (next==2)
   coup=1;
 else
@@ -34,7 +36,7 @@ else
     //fin de jeu
     affiche_grille(pion,nlig,ncol);
     printf("\nC est termine. ");
-    if(coup==-1) printf("BRAVO TU AS GAGNE");
+    if(coup==-1) printf("BRAVO TU AS GAGNE"); //affichage du résultat (gagnant ou perdant)
     else printf("Vous avez perdu. GAME OVER");
   return 0;
 }
