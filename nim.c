@@ -84,9 +84,10 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
                 printf("Erreur !");
             }
         } while (choix > nb_vois);
+        //on décremente le choix de 1 pour pouvoir l'utiliser dans le tableau selon les regles de syntaxe
+        return (choix-1);
     }
-    //on décremente le choix de 1 pour pouvoir l'utiliser dans le tableau selon les regles de syntaxe
-    return (choix-1);
+
 }
 
 
