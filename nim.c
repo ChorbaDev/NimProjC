@@ -65,18 +65,19 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
     //affichage des choix
     printf("\nChoisir la destination ");
     if (nb_vois==1){
-        printf(" Seule possibilité : (%d,%d) \nValider ",tab_vois[i].Ligne,tab_vois[i].Colonne);
+        printf(" Seule possibilité : (%d,%d)\n--->Valider ",tab_vois[i].Ligne,tab_vois[i].Colonne);
+        getchar();
+        return 0;
     }
     else{
       for (i =0 ; i < nb_vois ; i++) {
           printf(" %d : (%d,%d) ",i+1,tab_vois[i].Ligne,tab_vois[i].Colonne);
       }
-      printf("\n");
     }
 
         //on appelle pas la fct Lire_Entier pour des raisons d'affichage
         do {
-            printf("---> ");
+            printf("\n---> ");
             scanf("%d",&choix);
             getchar();
             if (choix>nb_vois){
