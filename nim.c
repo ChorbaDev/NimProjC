@@ -52,31 +52,34 @@ void Recherche (T_Case pion,int n,T_Tab_Case tab_vois[],int *nb_vois,char c){
 void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
 {
     int n=0;
-    T_Case vois;
-    Recherche(pion,ncol,tab_vois,&n,'C');
-    Recherche(pion,nlig,tab_vois,&n,'L');
-    //nb_vois prend la valeur de n
+//    T_Case vois;
+    Recherche(pion,ncol,tab_vois,&n,'C');//calcul des voisines sur la colonne
+    Recherche(pion,nlig,tab_vois,&n,'L');//calcul des voisines sur la ligne
     *nb_vois=n;
 }
 
 
 //une fonction qui gère le coup d’un joueur (cette fonction propose au joueur de choisir un coup parmi la liste des coups possibles).
 int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
-    int i,choix;
+    int i=0,choix;
     //affichage des choix
     printf("\nChoisir la destination ");
-    for (i = 0; i < nb_vois ; i++) {
-        printf(" %d : (%d,%d) ",i+1,tab_vois[i].Ligne,tab_vois[i].Colonne);
+    if (nb_vois==1){
+        printf(" Seule possibilité : (%d,%d) ",tab_vois[i].Ligne,tab_vois[i].Colonne);
     }
-    //on appelle pas la fct Lire_Entier pour des raisons d'affichage
-    do {
-        printf("\n---> ");
-        scanf("%d",&choix);
-        getchar();
-        if (choix>nb_vois){
-            printf("Erreur !");
+    else
+        for (i =0 ; i < nb_vois ; i++) {
+            printf(" %d : (%d,%d) ",i+1,tab_vois[i].Ligne,tab_vois[i].Colonne);
         }
-    } while (choix>nb_vois);
+        //on appelle pas la fct Lire_Entier pour des raisons d'affichage
+        do {
+            printf("\n---> ");
+            scanf("%d",&choix);
+            getchar();
+            if (choix>nb_vois){
+                printf("Erreur !");
+            }
+        } while (choix>nb_vois);
     //on décremente le choix de 1 pour pouvoir l'utiliser dans le tableau selon les regles de syntaxe
     return (choix-1);
 }
