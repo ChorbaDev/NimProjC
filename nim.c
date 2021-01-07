@@ -2,55 +2,47 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+
+
 //fonction qui trouve les voisines
 void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
 {
-    //initialisation pt 1
     int i=pion.Colonne;
     int j=0;
     int n=0;
     T_Case vois;
-    //calcul du nb de cases voisines
     //calcul des voisines sur la ligne
     while(i+1<=ncol && j<2){
         i++;
-        //la ligne reste identique la colonne change
         vois.Ligne=pion.Ligne;
         vois.Colonne=i;
-        //on stock ça dans tab vois à la position n
         tab_vois[n]=vois;
         n++;
         j++;
     }
-    //initialisation pt 2
     i=pion.Ligne;
     j=0;
     //calcul des voisines sur la colonne
     while(i+1<=nlig && j<2){
         i++;
-        //la colonne reste identique la ligne change
         vois.Ligne=i;
         vois.Colonne=pion.Colonne;
-        //on stock ça dans tab vois à la position n
         tab_vois[n]=vois;
         n++;
         j++;
     }
-    //nb_vois prend la valeur de n
     *nb_vois=n;
 }
 
 
 //une fonction qui gère le coup d’un joueur (cette fonction propose au joueur de choisir un coup parmi la liste des coups possibles).
 int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
-    //initialisation
     int i,choix;
     //affichage des choix
     printf("\nChoisir la destination ");
     for (i = 0; i < nb_vois ; i++) {
         printf(" %d : (%d,%d) ",i+1,tab_vois[i].Ligne,tab_vois[i].Colonne);
     }
-    //boucle pour lire l'entier
     //on appelle pas la fct Lire_Entier pour des raisons d'affichage
     do {
         printf("\n---> ");
@@ -67,31 +59,26 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
 
 //une fonction qui gère le coup gagnant effectué par l’ordinateur(jouer une position gagnante si possible, sinon jouer un coup au hasard)
 int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
-    //initialisation
     int nim_pos,nv_pos,nim_nv_pos;
     int i;
     T_Case nv_pion;
     nim_pos = Nimber(pion,nlig,ncol);
-    //d'après l'ennoce sur la stratégie gagnante, on a besoin de rentrer dans la condition
-    //uniquement lorsque le nimber de la position du pion actuelle est de 1
+    //d'après l'ennoce sur la stratégie gagnante
     if (nim_pos==1) {
+        //verif du nimber de la nouvelle position
         for (i = 0;  i<nb_vois ; i++)
         {
-            //la case voisine à la position i dans le tableau doit être verifiée
             nv_pion = tab_vois[i];
-            //on verfie donc le nimber de cette position
             nim_nv_pos = Nimber(nv_pion, nlig, ncol);
 
-            //si la condition est verifiée on a pas besoin de continuer la boucle on sort directement
             if (nim_nv_pos==0)
             {
                 break;
             }
         }
-        //on demande à l'ordinateur de choisir la nouvelle position qui est bien sûr i lorsque celui-ci à pour ver_pos 0
+        //choix de l'ordinateur
         nv_pos = i;
     }
-    //sinon on opère au hasard
     else
         nv_pos=Coup_Ordi_Hasard(nb_vois);
     return nv_pos;
