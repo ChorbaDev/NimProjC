@@ -39,7 +39,6 @@ void Recherche (T_Case pion,int n,T_Tab_Case tab_vois[],int *nb_vois,char c){
     int verif=(c=='L');
     T_Case vois;
     i=(verif)?pion.Ligne:pion.Colonne;
-printf("%d\n",*nb_vois );
    while(i+1<=n && j<2){
        i++;
        vois.Ligne=(verif)?i:pion.Ligne;
