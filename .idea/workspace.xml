@@ -11,8 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="commentaires de mes fonctions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="79331f18-3b96-48ab-aacf-c9eab71bc908" name="Default Changelist" comment="Comments--">
       <change beforePath="$PROJECT_DIR$/nim.c" beforeDir="false" afterPath="$PROJECT_DIR$/nim.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,7 @@
       <workItem from="1609778039417" duration="660000" />
       <workItem from="1609867764392" duration="753000" />
       <workItem from="1609933708280" duration="648000" />
-      <workItem from="1610030248177" duration="705000" />
+      <workItem from="1610030248177" duration="2304000" />
     </task>
     <task id="LOCAL-00001" summary="Création de la fonction voisines dans nim.c">
       <created>1608809790200</created>
@@ -280,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609767402011</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Comments">
+      <created>1610031202588</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610031202588</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Comments--">
+      <created>1610032092495</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1610032092495</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +407,8 @@
     <MESSAGE value="nim.c lire entier modif" />
     <MESSAGE value="." />
     <MESSAGE value="commentaires de mes fonctions" />
-    <option name="LAST_COMMIT_MESSAGE" value="commentaires de mes fonctions" />
+    <MESSAGE value="Comments" />
+    <MESSAGE value="Comments--" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments--" />
   </component>
 </project>
