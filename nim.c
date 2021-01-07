@@ -14,7 +14,7 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
     //calcul des voisines sur la ligne
     while(i+1<=ncol && j<2){
         i++;
-        //la ligne reste identique car on travaille sur une seul et même ligne seul la colonne change
+        //la ligne reste identique la colonne change
         vois.Ligne=pion.Ligne;
         vois.Colonne=i;
         //on stock ça dans tab vois à la position n
@@ -28,7 +28,7 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
     //calcul des voisines sur la colonne
     while(i+1<=nlig && j<2){
         i++;
-        //la colonne reste identique car on travaille sur une seul et même colonne seul la ligne change
+        //la colonne reste identique la ligne change
         vois.Ligne=i;
         vois.Colonne=pion.Colonne;
         //on stock ça dans tab vois à la position n
@@ -39,6 +39,7 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
     //nb_vois prend la valeur de n
     *nb_vois=n;
 }
+
 
 //une fonction qui gère le coup d’un joueur (cette fonction propose au joueur de choisir un coup parmi la liste des coups possibles).
 int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
@@ -59,7 +60,7 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
             printf("Erreur !");
         }
     } while (choix>nb_vois);
-    //on décremente le choix de 1 pour pouvoir l'utiliser dans le tableau selon les regles
+    //on décremente le choix de 1 pour pouvoir l'utiliser dans le tableau selon les regles de syntaxe
     return (choix-1);
 }
 
@@ -67,22 +68,22 @@ int Coup_joueur (T_Tab_Case tab_vois[],int nb_vois){
 //une fonction qui gère le coup gagnant effectué par l’ordinateur(jouer une position gagnante si possible, sinon jouer un coup au hasard)
 int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
     //initialisation
-    int pos,nv_pos,ver_pos;//nimber de la position actuelle, nouvelle position, nimber postition hypothétique
+    int nim_pos,nv_pos,nim_nv_pos;
     int i;
-    T_Case ver_case;//position d'un pion hypothetique
-    pos = Nimber(pion,nlig,ncol);
+    T_Case nv_pion;
+    nim_pos = Nimber(pion,nlig,ncol);
     //d'après l'ennoce sur la stratégie gagnante, on a besoin de rentrer dans la condition
     //uniquement lorsque le nimber de la position du pion actuelle est de 1
-
-    if (pos==1) {
+    if (nim_pos==1) {
         for (i = 0;  i<nb_vois ; i++)
         {
             //la case voisine à la position i dans le tableau doit être verifiée
-            ver_case = tab_vois[i];
+            nv_pion = tab_vois[i];
             //on verfie donc le nimber de cette position
-            ver_pos = Nimber(ver_case, nlig, ncol);
+            nim_nv_pos = Nimber(nv_pion, nlig, ncol);
+
             //si la condition est verifiée on a pas besoin de continuer la boucle on sort directement
-            if (ver_pos==0)
+            if (nim_nv_pos==0)
             {
                 break;
             }
@@ -94,8 +95,8 @@ int Coup_Ordi_Gagnant(T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int
     else
         nv_pos=Coup_Ordi_Hasard(nb_vois);
     return nv_pos;
-
 }
+
 
 //la fonction qui determine le coup de l'ordinateur qui depend de niveau
 int Coup_Ordi(int niveau,T_Case pion,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol){
@@ -125,7 +126,7 @@ int Nimber(T_Case pion,int nlig,int ncol){
     }
   //on remarque que dans le nimber de la derniere case de la grille est 0
   //donc on peut determiner les nimber de chaque case dans le dernier colonne ou  ligne
-  //puisque on a decaler le pion, on est dans le dernier ligne/colonne
+  //puisque on a decalé le pion, on est dans le dernier ligne/colonne
   //on remarque que si on est dans la derniere colonne : si le nombre de ligne - position de ligne actuelle(apres decalage) mod 3 egale a 0 donc le nimber c'est 0 sinon c'est 1
   //on remarque que si on est dans la derniere ligne : si le nombre de colonne - position de colonne actuelle(apres decalage) mod 3 egale a 0 donc le nimber c'est 0 sinon c'est 1
     nim=(x==ncol)?(((nlig-y)%3==0)?0:1):(((ncol-x)%3==0)?0:1);
