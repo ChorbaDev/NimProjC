@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <time.h>
 //fonction qui trouve les voisines
-void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
+/*void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
 {
     //initialisation pt 1
     int i=pion.Colonne;
@@ -36,6 +36,32 @@ void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
         n++;
         j++;
     }
+    //nb_vois prend la valeur de n
+    *nb_vois=n;
+}*/
+//
+void Recherche (T_Case pion,int n,T_Tab_Case tab_vois[],int *nb_vois,char c){
+    int i,j=0;
+    int verif=(c=='L');
+    T_Case vois;
+    i=(verif)?pion.Ligne:pion.Colonne;
+printf("%d\n",*nb_vois );
+   while(i+1<=n && j<2){
+       i++;
+       vois.Ligne=(verif)?i:pion.Ligne;
+       vois.Colonne=(verif)?pion.Colonne:i;
+       tab_vois[*nb_vois]=vois;
+       *nb_vois=*nb_vois+1;
+       j++;
+   }
+}
+//
+void Voisines(T_Case pion, T_Tab_Case tab_vois[],int *nb_vois,int nlig,int ncol)
+{
+    int n=0;
+    T_Case vois;
+    Recherche(pion,ncol,tab_vois,&n,'C');
+    Recherche(pion,nlig,tab_vois,&n,'L');
     //nb_vois prend la valeur de n
     *nb_vois=n;
 }

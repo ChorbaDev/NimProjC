@@ -37,4 +37,6 @@ void affiche_grille(T_Case pion,int nlig,int ncol);
 int Coup_Ordi(int niveau,T_Case pi,T_Tab_Case tab_vois[],int nb_vois,int nlig,int ncol);
 //pour trouver le Nimber d'un colonne donnee
 int Nimber(T_Case pion,int nlig,int ncol);
+
+void Recherche (T_Case pion,int n,T_Tab_Case tab_vois[],int *nb_vois,char c);
 #endif
