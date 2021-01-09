@@ -163,7 +163,7 @@ int Nimber(T_Case pion,int nlig,int ncol){
 }
 
 
-//Lecture d'un entier compris entre BINF et BSUP
+/* Lecture d'un entier compris entre BINF et BSUP */
 int Lire_Entier(int BINF,int BSUP)
 {
   int entier;
@@ -174,10 +174,10 @@ int Lire_Entier(int BINF,int BSUP)
     correct = (entier >= BINF && entier <= BSUP); //l'entier est correct si il est compris entre VMIN et VMAX
     if (correct == 0) //Si l'entier n'est pas correct (en dehors de l'intervalle)
     {
-      printf("Erreur !\n");
+      printf("Erreur !\n"); //On affiche un message d'erreur pour prévenir l'utilisateur
     }
   } while (!correct);
-  return entier;
+  return entier; //On retourne l'entier
 }
 
 
